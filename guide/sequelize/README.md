@@ -196,7 +196,9 @@ if (tag) {
 	tag.increment('usage_count');
 	return message.channel.send(tag.get('description'));
 }
+else{
 return message.reply(`Could not find tag: ${tagName}`);
+}
 ```
 
 This is your first query. You are finally doing something with our data, yay!  
